@@ -4,12 +4,14 @@ public class towerofhanoi {
     static String a,b,c;
   void tower(int no,String from,String via,String to)
   {
-      if(no>0)
+      if(no==1)
       {
+          System.out.println(from+"--"+to);
+          return;
+      }
           tower(no - 1, from,to,via);
           System.out.println(from+"--"+to);
           tower(no-1,to,from,via);
-      }
   }
   public static void main(String [] args)
   {
