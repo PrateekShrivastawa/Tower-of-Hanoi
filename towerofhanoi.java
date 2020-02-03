@@ -21,7 +21,7 @@ public class towerofhanoi {
       System.out.println("The steps for the following tower are given below");
       towerofhanoi obj = new towerofhanoi();
       obj.tower(n,"L","M","R");
-      int a= Math.pow(2,n);
+      int a= (int)Math.pow(2,n);
       int b= a-1;
       System.out.print("The total number of steps are "+b);
   }
