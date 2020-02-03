@@ -11,7 +11,7 @@ public class towerofhanoi {
       }
           tower(no - 1, from,to,via);
           System.out.println(from+"--"+to);
-          tower(no-1,to,from,via);
+          tower(no-1,via,from,to);
   }
   public static void main(String [] args)
   {
